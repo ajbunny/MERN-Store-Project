@@ -12,12 +12,17 @@ class Index extends React.Component {
           <a href="/store/New"> Insert Item </a>
         </nav>
         <ul>
-          {store.map((items, i) => {
+          {store.map((item, i) => {
+          
             return (
               <li>
-                <a href={`/store/${store._id}/edit`}> Edit</a>
+                <a href={`/store/${item.id}`}>
+                  {" "}
+                {item.item}
+                </a>
+                <a href={`/store/${item._id}/edit`}> Edit</a>
                 <form
-                  action={`/store/${store._id}?_method=DELETE`}
+                  action={`/store/${item._id}?_method=DELETE`}
                   method="POST"
                 >
                   <input type="submit" value="DELETE" />
