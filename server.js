@@ -16,6 +16,10 @@ app.use((req, res, next) => {
 
 app.use(express.urlencoded({ extended: false }));
 
+//USED TO LINK CSS
+app.use(express.static(__dirname + '/public'))
+
+
 //View Engine
 app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
@@ -39,6 +43,7 @@ const Store = require("./models/store.js");
 //WELCOME PAGE
 app.get("/", (req, res) => {
   res.send("Welcome to Bunny's Magic Shop");
+//  res.send( <a href="/store/"> Click here to enter our portal</a>)
 });
 
 //INDEX ROUTE
@@ -66,17 +71,16 @@ app.delete("/store/:id", (req, res) => {
 app.put("/store/:id", (req, res) => {
   Store.findByIdAndUpdate(req.params.id, req.body, (err, updatedStore) => {
     console.log(updatedStore);
-    res.redirect("/store/${req.params.id}");
+    res.redirect(`/store/${req.params.id}`);
   });
 });
 
 //CREATE ROUTE
-app.post("/pokemon", (req, res) => {
-  let storeBody = req.body;
-  storeBody.img = storeBody.item;
+app.post("/store", (req, res) => {
 
   Store.create(req.body, (error, createStore) => {
-    res.reditect("/store");
+    console.log(createStore)
+    res.redirect("/store");
   });
 });
 

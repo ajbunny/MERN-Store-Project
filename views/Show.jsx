@@ -1,17 +1,53 @@
 const React = require("react");
 
+
 class Show extends React.Component {
   render() {
     const { store } = this.props;
+
+    const renderForm = () => {
+    if (store.quantity > 0) {
+        return <form action={`/store/${this.props.store._id}?_method=PUT`} method="POST">
+        <input type="hidden" name="item" defaultValue={store.item}/><br/>
+        <input type="hidden" name="color"  defaultValue={store.color}/><br/>
+        <input type="hidden" name="quantity" defaultValue={store.quantity - 1}/> <br /> 
+       <input type="hidden" name="price" defaultValue={store.price}/><br/>
+       <input type="hidden" name="img" defaultValue={store.img}/><br/>
+    <input type="submit" value="Buy"/>
+        <h2>Quantity:{store.quantity}</h2>
+   </form>
+    }else {
+        return <h3>"Out of Stock"</h3> 
+    }
+}
     return (
       <div>
+         <link rel="stylesheet" type="text/css" href="/css/show.css"/>
         <h1>What a Magical Choice✨</h1>
+        <img src={store.img} ></img>
+        <form action={`/store/${this.props.store._id}?_method=PUT`} method="POST">
+             <input type="hidden" name="item" defaultValue={store.item}/><br/>
+             <input type="hidden" name="color"  defaultValue={store.color}/><br/>
+             <input type="hidden" name="quantity" defaultValue={store.quantity - 1}/> <br /> 
+            <input type="hidden" name="price" defaultValue={store.price}/><br/>
+            <input type="hidden" name="img" defaultValue={store.img}/><br/>
 
-        <img src={store.img}></img>
+             {/* <input type="submit" value="Buy"/> */}
+        </form>{renderForm ()}
+        <h2>Item:{store.item}</h2>
+        <h2>Price:${store.price}</h2>
+        
         <a href="/store/"> Back</a>
+
+
+
+
+        
       </div>
     );
   }
 }
 
 module.exports = Show;
+
+
