@@ -4,6 +4,8 @@ class Edit extends React.Component{
     render() {
       return (
      <div id='edit'>
+      <img id="logo" src="/css/ariLogo.png" alt="Logo" />
+      <div id="container">
          <link rel="stylesheet" type="text/css" href="/css/edit.css"/>
        {/* See the Layout takes in a prop called Title and we pass Edit Page to it  note: comments can't go first or last in  jsx return*/}
             {/* form is not complete we will do that below*/}
@@ -16,8 +18,14 @@ class Edit extends React.Component{
             Image:<input type="text" name="img" defaultValue={this.props.store.img}/><br/>
 
              <input type="submit" value="Submit Changes"/>
+             <button>
+           <a href="/store/"> Back</a>
+        </button>
         </form>
-        <a href="/store/"> Back</a>
+        
+        </div>
+        
+       
         </div>
       )
     }

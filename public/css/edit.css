@@ -15,19 +15,44 @@ body {
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
 }
-
-form {
-  display: inline-block;
+#logo {
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
   color: azure;
-  position: absolute;
-  margin: 30px;
-  padding: 200px;
 }
 
-input[type=text], select {
-  width: 100%;
-  padding: 12px;
+h1 {
+  text-align: center;
+  width: 15em;
+  margin: auto;
+  color: azure;
+  font-size: 3em;
+}
+#container {
+  width: 70vw;
+  margin: auto;
+  
+}
+
+form {
+  display: flex;
+  margin-top:20px;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  color: azure;
+  font-size: large;
+}
+
+input[type="text"],
+select {
+  width: 70%;
+  padding: 11px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical;
+  resize: vertical; 
 }

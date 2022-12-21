@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Sans+Narrow:wght@700&family=Shadows+Into+Light&display=swap');
 
 body {
   background-color: black;
@@ -13,14 +13,97 @@ body {
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
   object-fit: scale-down;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+
 }
-nav a {
+ 
+
+nav {
   display: flex;
+  margin: auto;
+  margin-bottom: 0px;
   align-items: center;
   justify-content: center;
-  margin-left: 350px;
-  margin-right: 350px;
 }
+
+a {
+  font-size: 2em;
+  color: azure;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+
+
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
 #logo {
   display: flex;
   margin-left: auto;
@@ -32,41 +115,97 @@ nav a {
   color: azure;
 }
 
+#pic {
+  border: conic-gradient(
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+}
+
+#item a {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#edit {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+}
+#edit a {
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+#delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 img {
   display: flex;
   width: 250px;
   height: 250px;
+  margin-top: 0;
+}
+
+#imgbd {
+  border: #fffb00 3px solid;
+  border-radius: 4%;
+  box-shadow: #ff7300;
 }
 
 p {
-  background-color: black;
+  /* background-color: black; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  width: 500px;
+  text-align: center;
   font-size: x-large;
   font-weight: 10;
   color: azure;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 ul {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin: 15px 15px 30px 30px;
-  padding: 100px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 10px;
 }
-a {
-  
+/* a {
   padding: 15px 15px;
   display: flex;
   flex-direction: rows;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: x-large;
   font-weight: 200;
-}
+  text-decoration: none;
+} */
 .main {
   display: flex;
   flex-direction: row;
@@ -93,9 +232,9 @@ li {
 .list {
   display: flex;
   flex-direction: column;
-  padding: 0.5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-top: 0px;
+  margin-bottom: 0px; */
 }

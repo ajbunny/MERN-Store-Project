@@ -6,14 +6,16 @@ class Index extends React.Component {
     return (
       <div id="index">
         <link rel="stylesheet" type="text/css" href="/css/index.css" />
-
+          <img id="logo" src="/css/ariLogo.png" alt="Logo" />
         <p>
           Don't see what you're looking for? <br /> Click below to have Black
           Magic manifest the item you most desire✨
         </p>
-        <img id="logo" src="/css/ariLogo.png" alt="Logo" />
+        
         <nav>
-          <a href="/store/New"> Insert Item </a>
+        <button className="button-85" role={ "button" }>
+          <a href="/store/New"> Manifest </a>
+          </button>
         </nav>
 
         <ul>
@@ -22,10 +24,14 @@ class Index extends React.Component {
               return (
                 <li>
                   <div className="list">
-                  <img src={store.img}></img>
+                    <div id="pic"> 
+                  <img id="imgbd" src={item.img} ></img>
+                  </div>
+                  <div id="item"> 
                     <a href={`/store/${item.id}`}> {item.item}</a>
+                    </div>
                     <br />
-                    <button>
+                    <button id="edit" className="button-85" role={ "button"}>
                       <a href={`/store/${item._id}/edit`}> Edit</a>
                       </button>
                     <br />
@@ -34,7 +40,9 @@ class Index extends React.Component {
                       method="POST"
                     >
                       <br />
+                      <div id="delete"> 
                       <input type="submit" value="DELETE" />
+                      </div>
                     </form>
                   </div>
                 </li>

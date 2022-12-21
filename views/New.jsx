@@ -9,6 +9,8 @@ class New extends React.Component {
 
         <img id="logo" src="/css/ariLogo.png" alt="Logo" />
         <h1>Manifest a New Item</h1>
+        <div id="container"> 
+        
         <form action="/store" method="POST">
           Item: <input type="text" name="item" />
           <br />
@@ -23,12 +25,16 @@ class New extends React.Component {
           Image:
           <input type="text" name="img" />
           <br /> <br />
-          <input type="submit" name="" value="Universe has Received" />
+         <div className="button-85">
+          <input type="submit" name=""className="button-85" role={ "button" } value="Universe has Received" />
+         </div>
           <br />
           <button>
-            <a href="/store"> BACK</a>
+            <a href="/store"> Back</a>
           </button>
         </form>
+        </div>
+
       </div>
     );
   }

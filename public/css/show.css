@@ -27,6 +27,11 @@ body {
   align-items: center;
     color: azure;
   }
+  h3 {
+    color: azure;
+   text-align: center;
+   font-size: 3em;
+  }
   img {
    display: flex;
    margin-left: auto;
@@ -54,10 +59,9 @@ body {
   margin-right: auto;
  } */
 
- button {
+ .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 40px;
+ margin: auto;
  }

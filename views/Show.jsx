@@ -11,26 +11,18 @@ class Show extends React.Component {
             action={`/store/${this.props.store._id}?_method=PUT`}
             method="POST"
           >
-            <input type="hidden" name="item" defaultValue={store.item} />
-            <br />
-            <input type="hidden" name="color" defaultValue={store.color} />
-            <br />
-            <input
+           <input
               type="hidden"
               name="quantity"
               defaultValue={store.quantity - 1}
-            />{" "}
-            <br />
-            <input type="hidden" name="price" defaultValue={store.price} />
-            <br />
-            <input type="hidden" name="img" defaultValue={store.img} />
-            <br />
-            <input type="submit" value="Buy" />
+            />
             <h2>Quantity:{store.quantity}</h2>
+            <input className="button" type="submit" value="Buy" />
+            
           </form>
         );
       } else {
-        return <h3>"Out of Stock"</h3>;
+        return <h3>Out of Stock Hoe</h3>;
       }
     };
     return (
@@ -40,31 +32,11 @@ class Show extends React.Component {
         <img src={store.img}></img>
         <h2>Item:{store.item}</h2>
         <h2>Price:${store.price}</h2>
-        <div id="form">
-        <form
-          action={`/store/${this.props.store._id}?_method=PUT`}
-          method="POST"
-        >
-          <input type="hidden" name="item" defaultValue={store.item} />
-          <br />
-          <input type="hidden" name="color" defaultValue={store.color} />
-          <br />
-          <input
-            type="hidden"
-            name="quantity"
-            defaultValue={store.quantity - 1}
-          />{" "}
-          <br />
-          <input type="hidden" name="price" defaultValue={store.price} />
-          <br />
-          <input type="hidden" name="img" defaultValue={store.img} />
-          <br />
-        </form>
-        {renderForm()}
-        
-        
-          <button><a href="/store/"> Back</a> </button>
-        </div>
+          {renderForm()}
+
+        <button className="button">
+          <a href="/store/"> Back</a>{" "}
+        </button>
       </div>
     );
   }
