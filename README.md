@@ -1,15 +1,19 @@
 ## Bunny's Black Magic
-For my first e-commerence app, I decided to created a spiritual store called Black Magic
-For my first project ever, I decided to create the class Tic - Tac - Toe game. For me, this prjoect was about learning to apply of the the knowledge I have learned so far from my bootcamp into on simple game. 
+For my first e-commerence app, I decided to created a spiritual store called Black Magic where your desired item is just one manifestion away! This prject has been a roller coaster of emotions and learning experiences but it has become something that I am very proud of and something that I look forward to updating for better user experience. Enjoy.
+
 
 
 ## Motivation
-Initally wanted to do a completely different game - Space Race. However, I quickly ( and quite humbly) learned that I had bitten on more than I could chew. While my instructors were extremely supportive and encouraging, being that this was my first project and I am farily new to programming, I decided to switch it to the classic Tic - Tac - Toe game. I decided that it would be better that I allow myself the time and practice to fully learn the basics when it comes to programming. I am very happy that I decided to switch my game because in the end, I truly believe it helped solidify the concepts that my instructors had taught me thus far. Also, as I further expand my knowlegde, I plan to comeback and update the game and build on my current code. 
+The motivation for this project was simply to do better than my last. Nothing more and nothing less. Everyday I learn that the key to being a success engineer is to break your code...a lot. With this project, I wanted to break my code so much that I was able to understand it inside and out. While I would love to say that I have reached that point, truthfully I had not. However, I learned more on this one project than I ever thought was imaginable so that's a start. Lastly, but certainly not least, my motivation for this app was knowing I was paying tribute to the universe and all that it blesses us with. I truly beleive thoughts are things, and words hold tremendous power. Power of the tongue and the divine power of manifestion are the keys to unlocking all that we want from this realm. For example, I really wanted to complete a cool app that I was really proud of, and I did. 
+
+
 
  
 ## How to access
-[Tic-Tac-Toe](https://ajbunny.github.io/Tic-Tac-Toe/) -- you can play the game here!
-If you want to load this to your computer you need to fork and clone this repo
+[Black Magic]() -- you can visit the store here!
+
+## Access
+If you want to load this site to your computer you need to fork and clone this repo
 
 ## Tech/framework used
 - HTML
@@ -19,17 +23,27 @@ If you want to load this to your computer you need to fork and clone this repo
 - Express 
 - Mongo DB
 - Mongoose
+- Node
+- GitHub
 
 ## How to use?
-- The first player will always be "X".
-- Player X will make the first move, then it will be Player O's turn.
-- The players will go back and forth until one of the players get 3 in a row.
-- If neither player is able to get 3 in a row then it will end in a draw and then can click  the restart button to play again 
+- On the first page, you can scroll through the list of items we currently have to select your desired item or you can click on "Manifest" to be taken to our New Item on page
+- On New Item page you will be able to input your desired item, color, quantity, price (because everything is negotiable) and lastly an image so that we can have a visual(jpg) of what you are looking for .
+- You also have the option to edit an item that we already have on the site
+- Lastly, you have the option to delete any items on the site as well
 
+
+## Recourses 
+- Google Fonts
+- Pexels.com
+- Unsplash.com
+- Pixabay.com
+-
 
 ## Credits
-I would like to thank my awesome instructor Kasper for helping me display my winning background colors to my game. I was struggling with how to display the colors, and I knew there was a simpler method I could use. Kasper saved the day and helped me realized 1) there is always more than 1 way to achieve something and 2) simple code is great code. 
+First and foremost I would like to thank you amazing peers (Sharon OgBonna, Hadia Shafique, Cody Jennings, Ashunti Ware and Long Hoang) for helping guide, collaborate, and encourage me through various steps through this project. Yall are A1's and don't EVER forget it. I would also like to acknowledge CSS Scan for their incredible button designs. Because of this site, I was not only able to add cool features to my store but I was able to learn the techniques used and how to implement them to other parts of my stores, but I was also inspired to try new techniques that I would have otherwise never thought of. 
+ 
 
-I would also like to thank my classmate Richard for providing a line of code to help my restart button function properly. 
+## Disclaimer
 
-Major shout out to YouTuber Siphiwo Julayi! While I watched various vidoes on Youtube to create this project, it was his video that I found the most valuable in the sense that he broke everything down and helped me really understand why he did what he did. 
+I am not affiliated with nor own any rights regarding this store app's pricing, inventory or image url source. No profits were generated from this project. All materials utilized were for educational and demonstration purposes only. 

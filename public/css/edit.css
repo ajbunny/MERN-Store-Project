@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Sans+Narrow:wght@700&family=Shadows+Into+Light&display=swap');
+
 
 body {
   background-color: black;
@@ -14,6 +16,7 @@ body {
   image-rendering: crisp-edges;
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
+  font-family: 'Amatic SC', cursive;
 }
 #logo {
   display: flex;

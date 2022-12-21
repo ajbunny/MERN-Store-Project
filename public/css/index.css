@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Sans+Narrow:wght@700&family=Shadows+Into+Light&display=swap');
 
 body {
@@ -115,19 +116,7 @@ a {
   color: azure;
 }
 
-#pic {
-  border: conic-gradient(
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-}
+
 
 #item a {
   display: flex;
@@ -135,7 +124,8 @@ a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: 800;
 }
 
 #edit {
@@ -168,9 +158,19 @@ img {
 }
 
 #imgbd {
-  border: #fffb00 3px solid;
+  border-color: conic-gradient(
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   border-radius: 4%;
-  box-shadow: #ff7300;
+  
 }
 
 p {
@@ -182,11 +182,12 @@ p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 700px;
   text-align: center;
   font-size: x-large;
   font-weight: 10;
   color: azure;
+  font-size: 3em;
 
 }
 
