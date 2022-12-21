@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: url("https://images.pexels.com/photos/2078126/pexels-photo-2078126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  background-size: auto;
+  height: 100%;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+#logo {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  color: azure;
+}
+
+h1 {
+  display: flex; 
+  flex-wrap: wrap;
+  height: auto;
+  width: 15em;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 30%;
+  padding: 20px;
+  color: azure;
+  font-size: 4em;
+
+
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  color: azure;
+  position: absolute;
+  font-size: large;
+}
+
+#new {
+  display:flex;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 100px;
+  align-items: center;
+  justify-self: center;
+  position: fixed;
+ 
+ 
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}

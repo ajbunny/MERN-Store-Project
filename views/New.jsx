@@ -4,12 +4,13 @@ const React = require("react");
 class New extends React.Component {
   render() {
     return (
-      <div>
+      <div id="new">
         <link rel="stylesheet" type="text/css" href="/css/new.css" />
+
+        <img id="logo" src="/css/ariLogo.png" alt="Logo" />
         <h1>Manifest a New Item</h1>
         <form action="/store" method="POST">
           Item: <input type="text" name="item" />
-          <input type="submit" name="" value="Universe has Received" />
           <br />
           Color: <input type="text" name="color" />
           <br />
@@ -19,13 +20,15 @@ class New extends React.Component {
           Price:
           <input type="text" name="price" />
           <br />
-          Img:
+          Image:
           <input type="text" name="img" />
+          <br /> <br />
+          <input type="submit" name="" value="Universe has Received" />
           <br />
+          <button>
+            <a href="/store"> BACK</a>
+          </button>
         </form>
-        <nav>
-          <a href="/store"> BACK</a>
-        </nav>
       </div>
     );
   }

@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+    background-image: url("https://images.pexels.com/photos/2078126/pexels-photo-2078126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-position: center;
+   background-attachment: fixed;
+    -o-background-size: cover;
+    background-size: auto;
+    height: 100%;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+    
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+  }
+
+  h2{
+    display: flex;
+   margin-left: auto;
+   margin-right:auto;
+   justify-content: center;
+  align-items: center;
+    color: azure;
+  }
+  img {
+   display: flex;
+   margin-left: auto;
+   margin-right:auto;
+    height: 400px;
+    width: 400px; 
+  }
+  input[type="quantity"],
+  select {
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+/* #form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+ } */
+
+ button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 40px;
+ }
