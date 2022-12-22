@@ -7,6 +7,7 @@ class Index extends React.Component {
       <div id="index">
         <link rel="stylesheet" type="text/css" href="/css/index.css" />
           <img id="logo" src="/css/ariLogo.png" alt="Logo" />
+          <h1>Where We Specialize in Pure Intentions </h1>
         <p>
           Don't see what you're looking for? <br /> Click below to have Black
           Magic manifest the item you most desire✨

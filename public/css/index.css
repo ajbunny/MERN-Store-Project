@@ -166,7 +166,7 @@ border-style: solid;
 }
 
 
-p {
+h1 {
 
 
   display: flex;
@@ -177,13 +177,28 @@ p {
   margin-right: auto;
   width: 700px;
   text-align: center;
-  font-size: x-large;
   font-weight: 10;
   color: azure;
   font-size: 3em;
+border: 2px #b5958d solid;
+border-radius:10%;
 
 }
 
+p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  text-align: center;
+ 
+  font-weight: 5;
+  color: azure;
+  font-size: 1.5em;
+}
 ul {
   display: flex;
   justify-content: space-around;
