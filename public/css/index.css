@@ -158,23 +158,20 @@ img {
 }
 
 #imgbd {
-  border-color: conic-gradient(
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  border-radius: 4%;
-  
+color: #e17924;
+border: 4px;
+border-radius:4%;
+border-style: solid;
+
 }
 
+#imgbd:hover {
+
+}
+
+
 p {
-  /* background-color: black; */
+
 
   display: flex;
   flex-direction: column;
@@ -199,14 +196,7 @@ ul {
   margin-top: 0px;
   padding: 10px;
 }
-/* a {
-  padding: 15px 15px;
-  display: flex;
-  flex-direction: rows;
-  font-size: x-large;
-  font-weight: 200;
-  text-decoration: none;
-} */
+
 .main {
   display: flex;
   flex-direction: row;

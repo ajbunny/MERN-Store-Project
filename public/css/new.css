@@ -116,10 +116,7 @@ form {
   color: azure;
   font-size: x-large;
  
- 
-
-
-}
+ }
 
 input[type="text"],
 select {
@@ -129,6 +126,10 @@ select {
   border-radius: 4px;
   resize: vertical; 
   
+}
+p {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 input[type="button"],

@@ -40,8 +40,13 @@ body {
    margin-right:auto;
     height: 400px;
     width: 400px; 
+    color: #e17924;
+    border: 4px;
+    border-radius:4%;
+    border-style: solid; 
+
   }
-  
+
   input[type="quantity"],
   select {
     display: flex;

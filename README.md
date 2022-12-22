@@ -38,7 +38,7 @@ If you want to load this site to your computer you need to fork and clone this r
 - Pexels.com
 - Unsplash.com
 - Pixabay.com
--
+- https://getcssscan.com/css-buttons-examples
 
 ## Credits
 First and foremost I would like to thank you amazing peers (Sharon OgBonna, Hadia Shafique, Cody Jennings, Ashunti Ware and Long Hoang) for helping guide, collaborate, and encourage me through various steps through this project. Yall are A1's and don't EVER forget it. I would also like to acknowledge CSS Scan for their incredible button designs. Because of this site, I was not only able to add cool features to my store but I was able to learn the techniques used and how to implement them to other parts of my stores, but I was also inspired to try new techniques that I would have otherwise never thought of. 
