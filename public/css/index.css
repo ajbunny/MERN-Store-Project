@@ -158,14 +158,10 @@ img {
 }
 
 #imgbd {
-color: #e17924;
+color: #b67666;
 border: 4px;
 border-radius:4%;
 border-style: solid;
-
-}
-
-#imgbd:hover {
 
 }
 
@@ -224,8 +220,5 @@ li {
   display: flex;
   flex-direction: column;
   padding: 0px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* margin-top: 0px;
-  margin-bottom: 0px; */
+
 }

@@ -16,7 +16,7 @@ class Edit extends React.Component{
             Quantity:<input type="text" name="quantity" defaultValue={this.props.store.quantity}/><br/>
             Price:<input type="text" name="price" defaultValue={this.props.store.price}/><br/>
             Image:<input type="text" name="img" defaultValue={this.props.store.img}/><br/>
-            
+            <p>Instructions: Please search & copy a JPG image of your desire</p>
              <input type="submit" value="Submit Changes"/>
              <button>
            <a href="/store/"> Back</a>

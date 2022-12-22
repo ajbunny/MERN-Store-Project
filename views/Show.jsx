@@ -28,6 +28,7 @@ class Show extends React.Component {
     return (
       <div id="show">
         <link rel="stylesheet" type="text/css" href="/css/show.css" />
+        <img id="logo" src="/css/ariLogo.png" alt="Logo" />
         <h1>What a Magical Choice✨</h1>
         <img src={store.img}></img>
         <h2>Item:{store.item}</h2>
